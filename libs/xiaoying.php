@@ -50,8 +50,7 @@ function getouttxt($data){
     header("Location:".$data["downlink"]);
     return;
 }
-// $url = $_GET["url"];
-$url = "http://www.xiaoying.tv/v/a9ar5/1";
+$url = $_GET["url"];
 if ($url) {
     $stobj = new Xiaoying();
     $data = $stobj->getdata($url);
